@@ -2,11 +2,9 @@ import cv2
 
 import numpy as np
 
-# Create a black image
 
 img = np.zeros((512, 512, 3), np.uint8)
 
-# Mouse callback function
 
 def mouse_drawing_event(event, x, y, flags, param):
 
@@ -20,7 +18,6 @@ def mouse_drawing_event(event, x, y, flags, param):
         cv2.rectangle(img, (x, y), (pt2_x, pt2_y), (200, 215, 150), 10)
       
 
-# Create a window and bind the function
 
 cv2.namedWindow('Canvas')
 
